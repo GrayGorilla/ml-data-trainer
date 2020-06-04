@@ -1,2 +1,2 @@
-def leaveOneOutVal():
+def leaveOneOutVal(dataFrame, features):
     return 1
