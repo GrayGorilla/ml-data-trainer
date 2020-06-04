@@ -6,7 +6,7 @@ def forwardSelection(dataFrame):
     featureSize = 0
     cols = list(dataFrame.columns)
     cols.remove(0)
-    print('\nBegining Search.\n')
+    print('Begining Search.\n')
     # Traverse through each level of Feature Tree
     for level in range(1, len(cols) + 1):
         print(f'\tLevel of Feature Tree: {level}')
@@ -38,5 +38,5 @@ def forwardSelection(dataFrame):
         print(f'Feature set {chosenFeatures} was best, accuracy is', '{:.1%}\n'.format(localMax))
     # Print results
     chosenFeatures = chosenFeatures[0:featureSize]
-    print('----------------------\n')
+    print('-------------------------------------\n')
     print(f'Finished search! The best feature subset is {chosenFeatures} which has an accuracy of,', '{:.1%}\n'.format(globalMax))
