@@ -11,7 +11,7 @@ def forwardSelection(dataFrame):
     for level in range(1, len(cols) + 1):
         print(f'\tLevel of Feature Tree: {level}')
         localMax = 0
-        bestFeature = None
+        bestFeature = cols[0]
         # Find most accurate feature combination of this level
         for feature in cols:
             # Don't compare if feature already chosen
