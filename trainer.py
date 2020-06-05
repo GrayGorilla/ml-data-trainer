@@ -3,7 +3,7 @@ from normalize import *
 from validator import leaveOneOutVal as validator
 from search import forwardSelection as searchFeatures
 
-defaultFile = './training-data/cs_170_small80.txt'     # Change from 80 -> 8
+defaultFile = './training-data/cs_170_small8.txt'
 
 def getData():
     print('\n-------- Welcome to Nathan D. Brennan\'s Feature Selection Algorithm. --------')
